@@ -26,15 +26,17 @@ Default login after seeding: `admin` / `password`
 
 ## GitHub
 
-Repository: push to `main` triggers CI (tests + asset build).
+**Repository:** https://github.com/Amrmoawad/crinvyx
 
 ## Deploy on Render (recommended)
 
-1. Push this repo to GitHub.
-2. Open [Render Dashboard](https://dashboard.render.com/) → **New** → **Blueprint**.
-3. Connect the GitHub repository and apply `render.yaml`.
-4. Set `APP_URL` to your Render service URL (e.g. `https://crinvyx.onrender.com`).
-5. After deploy, log in with `admin` / `password` (seeded on first boot).
+1. Open [Create Blueprint from this repo](https://dashboard.render.com/blueprint/new?repo=https://github.com/Amrmoawad/crinvyx).
+2. Connect GitHub if prompted, then click **Apply** / **Deploy Blueprint**.
+3. When asked, set `APP_URL` to your Render service URL (e.g. `https://crinvyx.onrender.com`).
+4. Wait for the web service and PostgreSQL database to finish provisioning.
+5. Log in with `admin` / `password` (seeded on first boot).
+
+> **Note:** Free Render services sleep after inactivity; the first request may take ~30 seconds.
 
 Render provisions a free PostgreSQL database automatically via the blueprint.
 
