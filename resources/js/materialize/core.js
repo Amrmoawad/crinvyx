@@ -1,0 +1,9 @@
+import '../../../materialize-html-admin-template/assets/vendor/libs/jquery/jquery.js';
+import '../../../materialize-html-admin-template/assets/vendor/libs/popper/popper.js';
+import '../../../materialize-html-admin-template/assets/vendor/js/bootstrap.js';
+import '../../../materialize-html-admin-template/assets/vendor/libs/node-waves/node-waves.js';
+import '../../../materialize-html-admin-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js';
+import '../../../materialize-html-admin-template/assets/vendor/libs/hammer/hammer.js';
+import '../../../materialize-html-admin-template/assets/vendor/libs/i18n/i18n.js';
+import '../../../materialize-html-admin-template/assets/vendor/libs/typeahead-js/typeahead.js';
+import '../../../materialize-html-admin-template/assets/vendor/js/menu.js';

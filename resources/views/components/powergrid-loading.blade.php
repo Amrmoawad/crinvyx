@@ -1,0 +1,3 @@
+<div class="py-4 text-center text-muted">
+    {{ __('Loading') }}...
+</div>

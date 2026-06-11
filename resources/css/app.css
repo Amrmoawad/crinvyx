@@ -1,0 +1,100 @@
+@import "../../vendor/power-components/livewire-powergrid/resources/css/base.css";
+@import "../../vendor/power-components/livewire-powergrid/resources/css/bootstrap5.css";
+@import "flatpickr/dist/flatpickr.css";
+@import "tom-select/dist/css/tom-select.bootstrap5.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bs-font-sans-serif: "Cairo", sans-serif;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+html,
+body,
+.btn,
+.form-control,
+.form-select,
+.dropdown-menu,
+.table,
+.menu-inner,
+.app-brand-text,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-results__option {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+html.rtl {
+    direction: rtl;
+}
+
+html.ltr {
+    direction: ltr;
+}
+
+.rtl .text-start {
+    text-align: right;
+}
+
+.rtl .text-end {
+    text-align: left;
+}
+
+.ltr .text-start {
+    text-align: left;
+}
+
+.ltr .text-end {
+    text-align: right;
+}
+
+/* PowerGrid hover uses theme primary color */
+.power-grid-table {
+    --bs-table-hover-bg: rgba(var(--bs-warning-rgb), 0.08);
+}
+
+/* PowerGrid: keep sort icon beside header text */
+.power-grid-table th > div {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+/* PowerGrid search box alignment and size */
+.powergrid-search {
+    width: min(100%, 250px);
+}
+
+.global-submit-loading {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global-submit-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.global-submit-spinner {
+    width: 1rem;
+    height: 1rem;
+    margin-inline-end: 0.5rem;
+    border: 0.15em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: global-submit-spin 0.75s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes global-submit-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
