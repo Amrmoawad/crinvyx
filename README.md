@@ -40,6 +40,27 @@ Default login after seeding: `admin` / `password`
 
 Render provisions a free PostgreSQL database automatically via the blueprint.
 
+## Deploy on Hostinger (shared hosting)
+
+Hostinger does not run `npm run build` for you. Before uploading or pulling code:
+
+```bash
+composer install --no-dev --optimize-autoloader
+npm ci
+npm run build
+```
+
+Ensure these exist on the server:
+
+- `public/build/manifest.json`
+- `public/build/assets/*`
+- `vendor/` (run `composer install` on the server or upload it)
+- `.env` with `APP_ENV=production`, `APP_DEBUG=false`, and a valid `APP_KEY`
+
+Point the domain document root to the `public` folder (or `public_html/public` if the project lives one level above `public_html`).
+
+After each frontend change, run `npm run build` locally and re-upload `public/build/`.
+
 ## Docker
 
 ```bash
