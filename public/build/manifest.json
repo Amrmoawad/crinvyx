@@ -1,0 +1,32 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-Bo89Hbg2.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DhN8cxcS.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "resources/js/auth.js"
+    ]
+  },
+  "resources/js/auth.js": {
+    "file": "assets/auth-CAiCLEjY.js",
+    "name": "auth",
+    "src": "resources/js/auth.js",
+    "isEntry": true
+  },
+  "resources/js/materialize/config.js": {
+    "file": "assets/config-B8zJJsWJ.js",
+    "name": "config",
+    "src": "resources/js/materialize/config.js",
+    "isEntry": true
+  }
+}
